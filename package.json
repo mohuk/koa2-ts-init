@@ -1,0 +1,36 @@
+{
+  "name": "koa2-boot-ts",
+  "version": "1.0.0",
+  "description": "An opinionated boilerplate for koa v2 with typescript",
+  "scripts": {
+    "start": "node bin/server",
+    "watch": "nodemon bin/server",
+    "lint": "tslint -c tslint.json src/**/*.ts",
+    "lint:fix": "tslint -c tslint.json src/**/*.ts --fix"
+  },
+  "author": "Mohammad Umair Khan <mohammad.umair.k@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "boom": "^4.2.0",
+    "convict": "^1.5.0",
+    "debug": "^2.3.3",
+    "koa": "^2.0.0",
+    "koa-bunyan-logger": "^2.0.0-pre1",
+    "koa-compose": "^3.1.0",
+    "koa-json": "^2.0.2",
+    "koa-router": "^7.0.1",
+    "ts-node": "^3.0.4"
+  },
+  "devDependencies": {
+    "@types/boom": "^4.3.2",
+    "@types/bunyan": "^0.0.36",
+    "@types/convict": "^0.6.33",
+    "@types/debug": "^0.0.29",
+    "@types/koa": "^2.0.39",
+    "@types/koa-json": "^2.0.16",
+    "@types/koa-router": "^7.0.22",
+    "nodemon": "^1.11.0",
+    "ts-lint": "^4.5.1",
+    "typescript": "^2.3.2"
+  }
+}
