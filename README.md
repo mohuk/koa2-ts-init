@@ -20,6 +20,7 @@
 ├── src                 # contains source files
 │   ├── conf            # wraps configurations files
 │   ├── controller      # contains all controllers in the application
+│   ├── custom-typings      # contains all controllers in the application
 │   ├── middleware      # folder with all middlewares
 │   ├── route           # wraps all the routes and exports a single composed middleware
 │   └── service         # contains all the service logic
