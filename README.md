@@ -53,3 +53,18 @@ And many more small packages.
 - `npm run watch` - starts the server with hot-reloading
 
 **Suggestion:** To turn on debug messages, set `DEBUG` environment variable to `kickstarter:*`
+
+### Docker
+
+`Dockerfile` for the project has been packaged. Running instructions are standard and can be found below:
+
+#### Build
+```bash
+λ docker build -t koa .
+```
+
+#### Run
+```bash
+# you can set the DEBUG environment variable through -e DEBUG={value} 
+λ docker run -dp 4000:4000 koa
+```
