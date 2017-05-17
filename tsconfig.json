@@ -14,7 +14,6 @@
     "inlineSources": true
   },
   "include": [
-    "src/**/*",
-    "custom-typings/**/*.d.ts"
+    "src/**/*"
   ]
 }

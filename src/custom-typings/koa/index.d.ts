@@ -6,4 +6,3 @@ declare module 'koa' {
     log: Logger;
   }
 }
-
