@@ -1,5 +1,5 @@
 ## `koa2-ts-init`
-> NodeJS app starter with Koa2 on Typescript.
+> Typescript fork of [koa2-kickstarter](https://github.com/umayr/koa2-kickstarter). Wondering why Typescript ? Read [this](http://stackoverflow.com/questions/12694530/what-is-typescript-and-why-would-i-use-it-in-place-of-javascript) post on StackOverflow
 
 ### Setup
 ```bash
