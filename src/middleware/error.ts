@@ -1,5 +1,5 @@
 import { Context } from 'koa';
-import * as compose  from 'koa-compose';
+import * as compose from 'koa-compose';
 
 const handler = async (ctx: Context, next: Function) => {
   try {

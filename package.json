@@ -3,34 +3,59 @@
   "version": "1.0.0",
   "description": "An opinionated boilerplate for koa v2 with typescript",
   "scripts": {
-    "start": "node bin/server",
+    "start": "node --inspect-brk bin/server",
     "watch": "nodemon bin/server",
     "lint": "tslint -c tslint.json src/**/*.ts",
-    "lint:fix": "tslint -c tslint.json src/**/*.ts --fix"
+    "lint:fix": "tslint -c tslint.json src/**/*.ts --fix",
+    "test": "jest"
   },
   "author": "Mohammad Umair Khan <mohammad.umair.k@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "boom": "^4.2.0",
-    "convict": "^1.5.0",
+    "convict": "^4.0.2",
     "debug": "^2.3.3",
     "koa": "^2.0.0",
-    "koa-bunyan-logger": "^2.0.0-pre1",
+    "koa-bunyan-logger": "^2.0.0",
     "koa-compose": "^3.1.0",
     "koa-json": "^2.0.2",
-    "koa-router": "^7.0.1",
+    "koa-router": "^7.3.0",
     "ts-node": "^3.0.4"
   },
   "devDependencies": {
     "@types/boom": "^4.3.2",
     "@types/bunyan": "^0.0.36",
-    "@types/convict": "^0.6.33",
+    "@types/convict": "^4.1.1",
     "@types/debug": "^0.0.29",
+    "@types/jest": "^21.1.8",
     "@types/koa": "^2.0.39",
     "@types/koa-json": "^2.0.16",
-    "@types/koa-router": "^7.0.22",
-    "nodemon": "^1.11.0",
-    "ts-lint": "^4.5.1",
-    "typescript": "^2.3.2"
+    "@types/koa-router": "^7.0.27",
+    "body-parser": "^1.18.2",
+    "jest": "^21.2.1",
+    "nodemon": "^1.12.5",
+    "pre-commit": "^1.2.2",
+    "ts-jest": "^21.2.4",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.2"
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testMatch": [
+      "**/test/**/*.ts"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json"
+    ]
   }
 }
