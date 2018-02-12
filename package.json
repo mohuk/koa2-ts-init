@@ -5,8 +5,8 @@
   "scripts": {
     "start": "node --inspect-brk bin/server",
     "watch": "nodemon bin/server",
-    "lint": "tslint src/**/*.ts",
-    "lint:fix": "tslint src/**/*.ts --fix",
+    "lint": "tslint 'src/**/*.ts'",
+    "lint:fix": "tslint 'src/**/*.ts' --fix",
     "test": "jest"
   },
   "author": "Mohammad Umair Khan <mohammad.umair.k@gmail.com>",

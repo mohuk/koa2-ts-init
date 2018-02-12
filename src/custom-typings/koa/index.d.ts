@@ -1,5 +1,5 @@
-import { Context } from 'koa';
 import * as Logger from 'bunyan';
+import { Context } from 'koa';
 
 declare module 'koa' {
   interface Context {
