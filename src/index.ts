@@ -1,13 +1,12 @@
 
+import * as debug from 'debug';
 import * as Koa from 'koa';
-import * as debug  from 'debug';
 
-import * as jsonMiddleware from 'koa-json';
 import * as loggerMiddleware from 'koa-bunyan-logger';
+import * as jsonMiddleware from 'koa-json';
 
-
-import requestMiddleware from './middleware/request';
 import errorMiddleware from './middleware/error';
+import requestMiddleware from './middleware/request';
 
 import routeMiddleware from './route';
 

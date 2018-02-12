@@ -6,18 +6,21 @@ const conf = convict({
   env: {
     doc: 'The application environment.',
     format: ['production', 'development', 'test'],
+    // tslint:disable-next-line:object-literal-sort-keys
     default: 'development',
     env: 'NODE_ENV',
   },
   ip: {
     doc: 'The ip address to bind.',
     format: 'ipaddress',
+    // tslint:disable-next-line:object-literal-sort-keys
     default: '127.0.0.1',
     env: 'IP_ADDRESS',
   },
   port: {
     doc: 'The port to bind.',
     format: 'port',
+    // tslint:disable-next-line:object-literal-sort-keys
     default: 4000,
     env: 'PORT',
   },

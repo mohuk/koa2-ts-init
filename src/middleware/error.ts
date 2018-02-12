@@ -1,7 +1,7 @@
 import { Context } from 'koa';
 import * as compose from 'koa-compose';
 
-const handler = async (ctx: Context, next: Function) => {
+const handler = async (ctx: Context, next: () => void) => {
   try {
     await next();
   } catch (error) {

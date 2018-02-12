@@ -1,7 +1,7 @@
 import { Context } from 'koa';
-import * as compose  from 'koa-compose';
+import * as compose from 'koa-compose';
 
-const logger = async (ctx: Context, next: Function) => {
+const logger = async (ctx: Context, next: () => void) => {
   ctx.log.info(`request from ${ctx.request.ip} to ${ctx.path}`);
   await next();
 };
